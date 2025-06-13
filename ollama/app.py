@@ -6,6 +6,7 @@ curl http://localhost:11434/api/generate -d '{
 }'
 '''
 import requests
+import json
 
 uri = "http://localhost:11434/api/generate"
 data = {
@@ -16,4 +17,7 @@ data = {
 
 response = requests.post(uri, json=data)
 
+response =json.loads(response.text)
+
 print(response)
+
