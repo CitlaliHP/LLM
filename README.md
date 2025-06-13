@@ -1,2 +1,5 @@
 # LLM
-EXTRACCIÓN DE CONOCIMIENTO EN BASES 
+ curl http://localhost:11434/api/generate -d '{
+  "model": "gemma3",
+  "prompt":"hola"
+}'
